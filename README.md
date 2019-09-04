@@ -5,8 +5,8 @@
 
 ![Me](https://i.imgur.com/X1FrC2c.jpg)
 
-* _Name_: Stephen Puthenpurackal
+* __Name__: _Stephen Puthenpurackal_
 
-* _Email_: sjputhenpurack1225@my.msutexas.edu
+* __Email__: _sjputhenpurack1225@my.msutexas.edu_
 
 
