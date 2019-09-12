@@ -4,23 +4,12 @@ using namespace std;
 
 int main(){
 
-struct Node{
+struct Node
+{
     int Data;
     Node *left;
     Node *right;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
 
 
@@ -29,3 +18,4 @@ struct Node{
 
 
 }
+
