@@ -18,25 +18,19 @@ struct node
     int data;
     node*  left;
     node*  right;
-
     node(int dataa) : data(dataa),left(nullptr),right(nullptr){}
-
 };
-
-
     node*  root;
 
     int count(node*  r);
-    void insert(node*  root, node*  temp);
+    void insert(node *&root, node *&temp);
     void print_node(node*  n, string label = "");
-    node*  minValueNode(node*  root);
+    node* minValueNode(node* root);
     bool CheckBalance(node*  root);
     int height(node*  root);
     void printGivenLevel(node*  root, int level);
     void GraphVizGetIds(node*  nodePtr, ofstream &VizOut);
     void GraphVizMakeConnections(node*  nodePtr, ofstream &VizOut);
-
-
 public:
 
     BSTree();

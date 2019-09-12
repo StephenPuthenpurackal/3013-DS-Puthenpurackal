@@ -130,12 +130,9 @@ int BSTree::count(node*  root)
         }
     }
 
-    /**
-     * type = ['predecessor','successor']
-     */
+  
 
- node *BSTree::minValueNode(node* root)
-    {
+     BSTree::node* BSTree::minValueNode(node* root){
         node* current = root;
 
         if (root->right)
