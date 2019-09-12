@@ -74,7 +74,7 @@ using namespace std;
     }
 
 
-int BSTree::count(node*  root)
+int BSTree::count(node* root)
     {
         if (!root)
         {
@@ -105,7 +105,7 @@ int BSTree::count(node*  root)
         }
     }
 
-    void BSTree::print_node(node*  n, string label = "")
+    void BSTree::print_node(node* n,string label = "")
     {
         if (label != "")
         {

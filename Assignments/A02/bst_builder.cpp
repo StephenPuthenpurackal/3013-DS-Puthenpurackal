@@ -19,6 +19,8 @@ int main()
     B.AuxInsert(38);
     B.AuxInsert(10);
     B.AuxInsert(29);
+    B.printLevelOrder();
+    B.GraphVizOut("before.txt");
 
     /*B.insert(27);
     B.insert(5);
