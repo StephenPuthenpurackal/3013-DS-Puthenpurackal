@@ -178,10 +178,11 @@ private:
         bool balancedTree = false;
 
 
-        int AproxLevel,NumberOfNodes, AproxNumOfNodes;
+        int NumberOfNodes, AproxNumOfNodes;
+        double AproxLevel;
         AproxLevel = height(root);
         NumberOfNodes = count(root);
-        AproxNumOfNodes =  pow(AproxLevel,2);
+        AproxNumOfNodes =  pow(AproxLevel,2.0);
           if((CheckleftSubtree(root) == false) && (CheckRightSubtree(root) == false)){
             // Comparisons of left subtrees to see whether if they are larger then each , if they are not
             // we can assume that the subtree counts are equal and say the tree is balanced.
