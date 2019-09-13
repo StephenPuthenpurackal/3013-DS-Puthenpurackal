@@ -176,13 +176,14 @@ private:
         bool completeTree = false;
         bool fullTree = false;
         bool balancedTree = false;
-
+        cout << "In normal complete full or balanced" << endl;
 
         int NumberOfNodes, AproxNumOfNodes;
         double AproxLevel;
         AproxLevel = height(root);
         NumberOfNodes = count(root);
-        AproxNumOfNodes =  pow(AproxLevel,2.0);
+        AproxNumOfNodes = pow(AproxLevel,2.0);
+        cout << "In approximated power area of complete full and balanced" << endl;
           if((CheckleftSubtree(root) == false) && (CheckRightSubtree(root) == false)){
             // Comparisons of left subtrees to see whether if they are larger then each , if they are not
             // we can assume that the subtree counts are equal and say the tree is balanced.
@@ -319,6 +320,7 @@ public:
     }
 
      void completeFULLorBALANCED(){
+         cout << "Entered Auxilery complete full or balanced" << endl;
             return completeFULLorBALANCED(root);
      }
 
