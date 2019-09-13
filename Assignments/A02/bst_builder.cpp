@@ -179,7 +179,7 @@ private:
 
 
         int AproxLevel,NumberOfNodes, AproxNumOfNodes;
-        AproxLevel = pow(height(root),2);
+        AproxLevel = height(root);
         NumberOfNodes = count(root);
         AproxNumOfNodes =  pow(AproxLevel,2);
           if((CheckleftSubtree(root) == false) && (CheckRightSubtree(root) == false)){
