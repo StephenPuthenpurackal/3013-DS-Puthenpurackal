@@ -156,7 +156,7 @@ int BSTree::count(node* root)
     }
 
 
-    bool BSTree::CheckBalance(node*  root){
+    bool BSTree::CheckBalance(node* root){
          cout << "===============Checking Whether if the Tree is balanced===================" << endl;
 
         int leftSubtree;
@@ -178,7 +178,7 @@ int BSTree::count(node* root)
     
 
     }
-    int BSTree::height(node*  root)
+    int BSTree::height(node* root)
     {
         if (!root)
         {
@@ -200,7 +200,7 @@ int BSTree::count(node* root)
     }
 
     /* Print nodes at a given level */
-    void BSTree::printGivenLevel(node*  root, int level)
+    void BSTree::printGivenLevel(node* root, int level)
     {
         if (root == NULL)
             return;
@@ -221,7 +221,7 @@ int BSTree::count(node* root)
     // Recivies a node pointer to root and performs a simple recursive
     // tree traversal.
     //************************************************************************
-    void BSTree::GraphVizGetIds(node*  nodePtr, ofstream &VizOut)
+    void BSTree::GraphVizGetIds(node* nodePtr, ofstream &VizOut)
     {
         static int NullCount = 0;
         if (nodePtr)
@@ -254,7 +254,7 @@ int BSTree::count(node* root)
     // Don't worry about what this method and the above method do, just
     // use the output as your told:)
     //************************************************************************
-    void BSTree::GraphVizMakeConnections(node*  nodePtr, ofstream &VizOut)
+    void BSTree::GraphVizMakeConnections(node* nodePtr, ofstream &VizOut)
     {
         static int NullCount = 0;
         if (nodePtr)

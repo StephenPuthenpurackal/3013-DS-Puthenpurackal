@@ -9,7 +9,6 @@
 using namespace std;
 
 
-
 int main()
 {
     srand(2342);

@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 class BSTree
 {
 
@@ -32,7 +31,6 @@ struct node
     void GraphVizGetIds(node* nodePtr, ofstream &VizOut);
     void GraphVizMakeConnections(node* nodePtr, ofstream &VizOut);
 public:
-
     BSTree();
     ~BSTree();
     int AuxCount();
@@ -42,8 +40,4 @@ public:
     int top();
     void printLevelOrder();
     void GraphVizOut(string filename);
-
-
-
-   
 };
