@@ -114,7 +114,7 @@ private:
         return current;
     }
 
-    bool BSTree::CheckBalance(node* root){
+    bool CheckBalance(node* root){
          cout << "===============Checking Whether if the Tree is balanced===================" << endl;
 
         int leftSubtree;
