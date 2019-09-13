@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <ctime>
 
 //http://www.webgraphviz.com/
 
@@ -170,6 +171,41 @@ private:
 	}
 
 }
+// check whether the BST is either a complete, full and 
+    void completeFULLorBALANCED(node* root){
+        bool completeTree = false;
+        bool fullTree = false;
+        bool balancedTree = false;
+
+
+        int AproxLevel,NumberOfNodes, AproxNumOfNodes;
+        AproxLevel = pow(height(root),2);
+        NumberOfNodes = count(root);
+        AproxNumOfNodes =  pow(AproxLevel,2);
+          if((CheckleftSubtree(root) == false) && (CheckRightSubtree(root) == false)){
+            // Comparisons of left subtrees to see whether if they are larger then each , if they are not
+            // we can assume that the subtree counts are equal and say the tree is balanced.
+                if(CheckBalance(root) == true){
+                    balancedTree = true;
+                }
+          }
+
+
+        if(NumberOfNodes == AproxNumOfNodes){
+            fullTree = true;
+        }
+        if((CheckleftSubtree(root) == false) && (CheckRightSubtree(root) == false) && (fullTree)) {
+            //If left subtree and right subtree are not larger then each other, and if its a full tree
+            // then we can assume the tree is a complete
+           completeTree = true;
+        }
+    
+        cout << "Fulltree=" << "[" << fullTree << "]" << endl;
+        cout << "Balanced Tree" << "[" << balancedTree << "]" << endl;
+        cout << "completeTree" << "[" << completeTree << "]" << endl;
+
+
+    }
 
     /* Print nodes at a given level */
     void printGivenLevel(node *root, int level)
@@ -281,6 +317,10 @@ public:
         print_node(minValueNode(root), "minVal");
     }
 
+     void completeFULLorBALANCED(){
+            return completeFULLorBALANCED(root);
+     }
+
     void CheckBalance()
     {
         cout << "===============Checking Whether if the Tree is balanced===================" << endl;
@@ -297,6 +337,14 @@ public:
         cout << "===============Checking Whether if the Tree is balanced===================" << endl;
     }
 
+    bool CheckleftSubtree(node * root){
+            return height(root->left) > height(root->right);
+    }
+
+    bool CheckRightSubtree(node * root){
+            return height(root->right) > height(root->left);
+
+    }
     int height()
     {
 
@@ -357,6 +405,7 @@ int main()
     B.insert(10);
     B.insert(29);
     B.CheckBalance();
+    B.completeFULLorBALANCED();
     B.printLevelOrder();
     B.GraphVizOut("before.txt");
 
