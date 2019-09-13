@@ -332,11 +332,7 @@ int main()
     B.insert(38);
     B.insert(10);
     B.insert(29);
-    B.insert(27);
-    B.insert(5);
-    B.insert(43);
-    B.insert(36);
-    B.insert(3);
+    B.CheckBalance();
     B.printLevelOrder();
     B.GraphVizOut("before.txt");
 
