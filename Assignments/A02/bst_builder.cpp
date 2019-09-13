@@ -155,6 +155,22 @@ private:
         }
     }
 
+    int Depth(node *root, int value, int depth) {
+	if (root == nullptr) {
+		return -1;
+	}
+	if (value < root->data) {
+		return Depth(root->left, value, depth + 1);
+	}
+	else {
+		return Depth(root->right, value, depth + 1);
+	}
+	if (value == root->data) {
+		return depth;
+	}
+
+}
+
     /* Print nodes at a given level */
     void printGivenLevel(node *root, int level)
     {
@@ -285,6 +301,11 @@ public:
     {
 
         return height(root);
+    }
+
+    int depth()
+    {
+        return Depth(root, root->data, 0);
     }
 
     int top()
