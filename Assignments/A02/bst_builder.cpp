@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 
-
 //http://www.webgraphviz.com/
 
 using namespace std;
@@ -114,27 +113,25 @@ private:
         return current;
     }
 
-    bool CheckBalance(node* root){
-         cout << "===============Checking Whether if the Tree is balanced===================" << endl;
+    bool CheckBalance(node *root)
+    {
 
         int leftSubtree;
         int rightSubtree;
 
-        if(!root){
+        if (!root)
+        {
             return 1;
         }
         leftSubtree = height(root->left);
         rightSubtree = height(root->right);
 
-        if(abs(leftSubtree - rightSubtree) <= 1 && CheckBalance(root ->left) && CheckBalance(root->right)){
+        if (abs(leftSubtree - rightSubtree) <= 1 && CheckBalance(root->left) && CheckBalance(root->right))
+        {
             return 1;
         }
-        
 
-        cout << "===============Checking Whether if the Tree is balanced===================" << endl;
         return 0;
-    
-
     }
 
     int height(node *root)
@@ -269,13 +266,19 @@ public:
     }
 
     void CheckBalance()
-    {   bool result = CheckBalance(root);
-     if(result == 1){
-         cout << "The Tree is Balanced" << endl;
-     }
-    else if (result == 0){
-        cout << "The Tree is not Balanced" << endl;
-    }
+    {
+        cout << "===============Checking Whether if the Tree is balanced===================" << endl;
+        bool result = CheckBalance(root);
+        if (result == 1)
+        {
+            cout << "The Tree is Balanced" << endl;
+        }
+        else if (result == 0)
+        {
+            cout << "The Tree is not Balanced" << endl;
+        }
+
+        cout << "===============Checking Whether if the Tree is balanced===================" << endl;
     }
 
     int height()
