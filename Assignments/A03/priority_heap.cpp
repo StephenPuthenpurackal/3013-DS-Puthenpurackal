@@ -1,10 +1,3 @@
-#include<iostream>
-
-using namespace std;
-
-
-int main(){
-
 //https://stackoverflow.com/questions/55116344/how-to-setup-vs-code-for-c-14-c-17
 //https://github.com/nlohmann/json
 
@@ -137,28 +130,4 @@ int main(int argc, char **argv) {
     AH.PrintAnimals();
 
     return 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
