@@ -31,7 +31,7 @@ public:
     JsonHelper(string filename) {
         FileName = filename;
 
-        ifstream input(FileName);
+        std::ifstream input(FileName);
         input >> Data;
         input.close();
 
