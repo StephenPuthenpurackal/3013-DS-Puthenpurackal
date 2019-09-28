@@ -4,7 +4,6 @@
 #include "json_helper.cpp"
 #include <fstream>
 #include <iostream>
-#include "Coordinate_Class.h"
 #include "AnimalHelper_Class.h"
 
 #define _USE_MATH_DEFINES
