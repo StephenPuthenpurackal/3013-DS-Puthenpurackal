@@ -20,13 +20,6 @@ inline double DegreeToRadian(double angle) {
 }
 
 
-
-
-
-
-
-
-
 int main(int argc, char **argv) {
 
     AnimalHelper AH("animals.json");
