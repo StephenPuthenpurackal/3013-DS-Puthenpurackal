@@ -6,7 +6,7 @@
     "configurations": [
         
         {
-            "name": "g++ build and debug active file",
+            "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}//Assignments//A03//priority_heap.exe",
@@ -14,7 +14,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "gdb",
             "miDebuggerPath": "\\MinGW64\\mingw64\\bin\\gdb.exe",
             "preLaunchTask": "g++.exe build active file",
