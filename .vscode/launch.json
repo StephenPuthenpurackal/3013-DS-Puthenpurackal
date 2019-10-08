@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "gdb.exe",
+            "program": "C:/MinGW64/mingw64/bin/gdb.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
