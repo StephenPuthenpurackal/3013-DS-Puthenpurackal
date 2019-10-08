@@ -32,6 +32,7 @@ private:
     double myLongitude;
 };
 
+// Rosetta Stone Haversine Formula
 double HaversineDistance(const Coordinate &p1, const Coordinate &p2) {
     double latRad1 = DegreeToRadian(p1.Latitude());
     double latRad2 = DegreeToRadian(p2.Latitude());
