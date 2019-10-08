@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/A03/priority_heap.cpp",
+            "program": "gdb.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
