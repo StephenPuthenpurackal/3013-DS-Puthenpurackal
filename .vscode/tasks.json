@@ -8,12 +8,12 @@
             "label": "g++.exe build active file",
             "command": "g++",
             "args": [
-                "-g",
-                "-std=c++11",
-                "-std=c++14",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "-g", "priority_heap.cpp"
+                //"-std=c++11",
+                //"-std=c++14",
+               // "${file}",
+               // "-o",
+              //  "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "\\MinGW64\\mingw64\\bin"
