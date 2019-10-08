@@ -9,14 +9,15 @@
             "name": "g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Assignments/A03/priority_heap.cpp",
+            "program": "${workspaceFolder}//Assignments//A03//priority_heap.cpp",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:/MinGW64/mingw64/bin/gdb.exe",
+            "miDebuggerPath": "\\MinGW64\\mingw64\\bin\\gdb.exe",
+            "preLaunchTask": "g++.exe build active file",
             "setupCommands": [
                 {
                    "description": "Enable pretty-printing for gdb",
