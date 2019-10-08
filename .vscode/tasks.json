@@ -6,7 +6,7 @@
         {
             "type": "shell",
             "label": "g++.exe build active file",
-            "command": "C:C:\\MinGW64\\mingw64\\bin\\g++.exe",
+            "command": "C:\\MinGW64\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
                 "-std=c++11",
