@@ -9,13 +9,13 @@
             "name": "g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/Assignments/A03/priority_heap.cpp",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb",
+            "MIMode": "gdb",
             "miDebuggerPath": "C:/MinGW64/mingw64/bin/gdb.exe",
             //"setupCommands": [
            //     {
