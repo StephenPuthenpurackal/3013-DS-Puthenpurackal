@@ -314,14 +314,14 @@ public:
      * Returns
      *      [int] top_value - top value in the heap (min or max)
      */
-    int Extract() {
+    Animal Extract() {
         // Some problem occuring with this code right here *************************************************************
        /* if (Empty()) {
             return -1;
         }
         */
 
-        int retval = *A[1];
+        Animal retval = *A[1];
         A[1] = A[--Next];
         HeapSize--;
 
@@ -403,11 +403,38 @@ public:
 };
 
 int main(int argc, char **argv) {
+    ofstream outfile;
+    outfile.open("output.txt");
 
-    AnimalHelper AH("animals.json");
-    char ch;
+    JsonHelper *J;
+    J = new JsonHelper("animals.json");
+    json object;
 
-    AH.PrintAnimals();
+    // uses json function to get size of input, uses this number as reference to build bucket of heaps.
+    int size = J->getSize();
+
+    // Creating double pointer of type [Struct] Animal.
+    Animal **Animals;
+    // Since it is a Pointer of pointers, makes the pointer point to an array of pointer depending on size of
+    // input.
+    Animals = new Animal *[size];
+   
+
+
+    for(int i = 0; i < size; i++){
+        object = J->getNext();
+        Animals[i] = new Animal(object);
+        outfile << Animals[i]->animal_name << endl;
+    }
+
+
+    
+
+
+
+
+
+
 
     return 0;
 }
