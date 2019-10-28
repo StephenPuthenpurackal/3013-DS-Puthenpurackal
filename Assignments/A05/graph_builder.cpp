@@ -19,6 +19,7 @@
 #include <string>
 #include <fstream>
 #include "JsonFacade.hpp"
+#include "json.hpp"
 #include "Geo.hpp"
 #include "cities.hpp"
 #include "Heap.hpp"
@@ -36,10 +37,17 @@ json object;
 JsonFacade JF(CitiesInput);
 
 Cities **City;
-Cities **ReadCity;
+Cities *ReadCity;
 
 int SizeOfJsonFile = JF.getSize();
 Heap<Cities> H(SizeOfJsonFile + 1,false);
+
+City = new Cities *[SizeOfJsonFile];
+for(int i = 0; i < SizeOfJsonFile; i++){
+    object = JF.getNext();
+    City[i] = new Cities(object);
+}
+
 
 
 
