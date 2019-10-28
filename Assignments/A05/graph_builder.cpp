@@ -18,6 +18,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <iomanip>
 #include "JsonFacade.hpp"
 #include "json.hpp"
 #include "Geo.hpp"
@@ -93,9 +94,8 @@ for(int i = 0; i < SizeOfJsonFile; i++){
 
 for(int i = 0; i < SizeOfJsonFile; i++){
 
-
-
 if( i < 10 || i >= (SizeOfJsonFile - 10)){
+    outfile << setfill('0') << setw(4);
     outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 }
 
