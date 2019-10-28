@@ -86,7 +86,7 @@ CityPointer = new City *[SizeOfJsonFile];
 for(int i = 0; i < SizeOfJsonFile; i++){
     object = JF.getNext();
     CityPointer[i] = new City(object);
-    outfile << i+1 << ": " << CityPointer[i]->Name << endl;
+    //outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 
 }
 

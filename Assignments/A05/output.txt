@@ -1,0 +1,1000 @@
+1: New York
+2: Los Angeles
+3: Chicago
+4: Houston
+5: Philadelphia
+6: Phoenix
+7: San Antonio
+8: San Diego
+9: Dallas
+10: San Jose
+11: Austin
+12: Indianapolis
+13: Jacksonville
+14: San Francisco
+15: Columbus
+16: Charlotte
+17: Fort Worth
+18: Detroit
+19: El Paso
+20: Memphis
+21: Seattle
+22: Denver
+23: Washington
+24: Boston
+25: Nashville-Davidson
+26: Baltimore
+27: Oklahoma City
+28: Louisville/Jefferson County
+29: Portland
+30: Las Vegas
+31: Milwaukee
+32: Albuquerque
+33: Tucson
+34: Fresno
+35: Sacramento
+36: Long Beach
+37: Kansas City
+38: Mesa
+39: Virginia Beach
+40: Atlanta
+41: Colorado Springs
+42: Omaha
+43: Raleigh
+44: Miami
+45: Oakland
+46: Minneapolis
+47: Tulsa
+48: Cleveland
+49: Wichita
+50: Arlington
+51: New Orleans
+52: Bakersfield
+53: Tampa
+54: Honolulu
+55: Aurora
+56: Anaheim
+57: Santa Ana
+58: St. Louis
+59: Riverside
+60: Corpus Christi
+61: Lexington-Fayette
+62: Pittsburgh
+63: Anchorage
+64: Stockton
+65: Cincinnati
+66: St. Paul
+67: Toledo
+68: Greensboro
+69: Newark
+70: Plano
+71: Henderson
+72: Lincoln
+73: Buffalo
+74: Jersey City
+75: Chula Vista
+76: Fort Wayne
+77: Orlando
+78: St. Petersburg
+79: Chandler
+80: Laredo
+81: Norfolk
+82: Durham
+83: Madison
+84: Lubbock
+85: Irvine
+86: Winston-Salem
+87: Glendale
+88: Garland
+89: Hialeah
+90: Reno
+91: Chesapeake
+92: Gilbert
+93: Baton Rouge
+94: Irving
+95: Scottsdale
+96: North Las Vegas
+97: Fremont
+98: Boise City
+99: Richmond
+100: San Bernardino
+101: Birmingham
+102: Spokane
+103: Rochester
+104: Des Moines
+105: Modesto
+106: Fayetteville
+107: Tacoma
+108: Oxnard
+109: Fontana
+110: Columbus
+111: Montgomery
+112: Moreno Valley
+113: Shreveport
+114: Aurora
+115: Yonkers
+116: Akron
+117: Huntington Beach
+118: Little Rock
+119: Augusta-Richmond County
+120: Amarillo
+121: Glendale
+122: Mobile
+123: Grand Rapids
+124: Salt Lake City
+125: Tallahassee
+126: Huntsville
+127: Grand Prairie
+128: Knoxville
+129: Worcester
+130: Newport News
+131: Brownsville
+132: Overland Park
+133: Santa Clarita
+134: Providence
+135: Garden Grove
+136: Chattanooga
+137: Oceanside
+138: Jackson
+139: Fort Lauderdale
+140: Santa Rosa
+141: Rancho Cucamonga
+142: Port St. Lucie
+143: Tempe
+144: Ontario
+145: Vancouver
+146: Cape Coral
+147: Sioux Falls
+148: Springfield
+149: Peoria
+150: Pembroke Pines
+151: Elk Grove
+152: Salem
+153: Lancaster
+154: Corona
+155: Eugene
+156: Palmdale
+157: Salinas
+158: Springfield
+159: Pasadena
+160: Fort Collins
+161: Hayward
+162: Pomona
+163: Cary
+164: Rockford
+165: Alexandria
+166: Escondido
+167: McKinney
+168: Kansas City
+169: Joliet
+170: Sunnyvale
+171: Torrance
+172: Bridgeport
+173: Lakewood
+174: Hollywood
+175: Paterson
+176: Naperville
+177: Syracuse
+178: Mesquite
+179: Dayton
+180: Savannah
+181: Clarksville
+182: Orange
+183: Pasadena
+184: Fullerton
+185: Killeen
+186: Frisco
+187: Hampton
+188: McAllen
+189: Warren
+190: Bellevue
+191: West Valley City
+192: Columbia
+193: Olathe
+194: Sterling Heights
+195: New Haven
+196: Miramar
+197: Waco
+198: Thousand Oaks
+199: Cedar Rapids
+200: Charleston
+201: Visalia
+202: Topeka
+203: Elizabeth
+204: Gainesville
+205: Thornton
+206: Roseville
+207: Carrollton
+208: Coral Springs
+209: Stamford
+210: Simi Valley
+211: Concord
+212: Hartford
+213: Kent
+214: Lafayette
+215: Midland
+216: Surprise
+217: Denton
+218: Victorville
+219: Evansville
+220: Santa Clara
+221: Abilene
+222: Athens-Clarke County
+223: Vallejo
+224: Allentown
+225: Norman
+226: Beaumont
+227: Independence
+228: Murfreesboro
+229: Ann Arbor
+230: Springfield
+231: Berkeley
+232: Peoria
+233: Provo
+234: El Monte
+235: Columbia
+236: Lansing
+237: Fargo
+238: Downey
+239: Costa Mesa
+240: Wilmington
+241: Arvada
+242: Inglewood
+243: Miami Gardens
+244: Carlsbad
+245: Westminster
+246: Rochester
+247: Odessa
+248: Manchester
+249: Elgin
+250: West Jordan
+251: Round Rock
+252: Clearwater
+253: Waterbury
+254: Gresham
+255: Fairfield
+256: Billings
+257: Lowell
+258: San Buenaventura (Ventura)
+259: Pueblo
+260: High Point
+261: West Covina
+262: Richmond
+263: Murrieta
+264: Cambridge
+265: Antioch
+266: Temecula
+267: Norwalk
+268: Centennial
+269: Everett
+270: Palm Bay
+271: Wichita Falls
+272: Green Bay
+273: Daly City
+274: Burbank
+275: Richardson
+276: Pompano Beach
+277: North Charleston
+278: Broken Arrow
+279: Boulder
+280: West Palm Beach
+281: Santa Maria
+282: El Cajon
+283: Davenport
+284: Rialto
+285: Las Cruces
+286: San Mateo
+287: Lewisville
+288: South Bend
+289: Lakeland
+290: Erie
+291: Tyler
+292: Pearland
+293: College Station
+294: Kenosha
+295: Sandy Springs
+296: Clovis
+297: Flint
+298: Roanoke
+299: Albany
+300: Jurupa Valley
+301: Compton
+302: San Angelo
+303: Hillsboro
+304: Lawton
+305: Renton
+306: Vista
+307: Davie
+308: Greeley
+309: Mission Viejo
+310: Portsmouth
+311: Dearborn
+312: South Gate
+313: Tuscaloosa
+314: Livonia
+315: New Bedford
+316: Vacaville
+317: Brockton
+318: Roswell
+319: Beaverton
+320: Quincy
+321: Sparks
+322: Yakima
+323: Lee's Summit
+324: Federal Way
+325: Carson
+326: Santa Monica
+327: Hesperia
+328: Allen
+329: Rio Rancho
+330: Yuma
+331: Westminster
+332: Orem
+333: Lynn
+334: Redding
+335: Spokane Valley
+336: Miami Beach
+337: League City
+338: Lawrence
+339: Santa Barbara
+340: Plantation
+341: Sandy
+342: Sunrise
+343: Macon
+344: Longmont
+345: Boca Raton
+346: San Marcos
+347: Greenville
+348: Waukegan
+349: Fall River
+350: Chico
+351: Newton
+352: San Leandro
+353: Reading
+354: Norwalk
+355: Fort Smith
+356: Newport Beach
+357: Asheville
+358: Nashua
+359: Edmond
+360: Whittier
+361: Nampa
+362: Bloomington
+363: Deltona
+364: Hawthorne
+365: Duluth
+366: Carmel
+367: Suffolk
+368: Clifton
+369: Citrus Heights
+370: Livermore
+371: Tracy
+372: Alhambra
+373: Kirkland
+374: Trenton
+375: Ogden
+376: Hoover
+377: Cicero
+378: Fishers
+379: Sugar Land
+380: Danbury
+381: Meridian
+382: Indio
+383: Concord
+384: Menifee
+385: Champaign
+386: Buena Park
+387: Troy
+388: O'Fallon
+389: Johns Creek
+390: Bellingham
+391: Westland
+392: Bloomington
+393: Sioux City
+394: Warwick
+395: Hemet
+396: Longview
+397: Farmington Hills
+398: Bend
+399: Lakewood
+400: Merced
+401: Mission
+402: Chino
+403: Redwood City
+404: Edinburg
+405: Cranston
+406: Parma
+407: New Rochelle
+408: Lake Forest
+409: Napa
+410: Hammond
+411: Fayetteville
+412: Bloomington
+413: Avondale
+414: Somerville
+415: Palm Coast
+416: Bryan
+417: Gary
+418: Largo
+419: Brooklyn Park
+420: Tustin
+421: Racine
+422: Deerfield Beach
+423: Lynchburg
+424: Mountain View
+425: Medford
+426: Lawrence
+427: Bellflower
+428: Melbourne
+429: St. Joseph
+430: Camden
+431: St. George
+432: Kennewick
+433: Baldwin Park
+434: Chino Hills
+435: Alameda
+436: Albany
+437: Arlington Heights
+438: Scranton
+439: Evanston
+440: Kalamazoo
+441: Baytown
+442: Upland
+443: Springdale
+444: Bethlehem
+445: Schaumburg
+446: Mount Pleasant
+447: Auburn
+448: Decatur
+449: San Ramon
+450: Pleasanton
+451: Wyoming
+452: Lake Charles
+453: Plymouth
+454: Bolingbrook
+455: Pharr
+456: Appleton
+457: Gastonia
+458: Folsom
+459: Southfield
+460: Rochester Hills
+461: New Britain
+462: Goodyear
+463: Canton
+464: Warner Robins
+465: Union City
+466: Perris
+467: Manteca
+468: Iowa City
+469: Jonesboro
+470: Wilmington
+471: Lynwood
+472: Loveland
+473: Pawtucket
+474: Boynton Beach
+475: Waukesha
+476: Gulfport
+477: Apple Valley
+478: Passaic
+479: Rapid City
+480: Layton
+481: Lafayette
+482: Turlock
+483: Muncie
+484: Temple
+485: Missouri City
+486: Redlands
+487: Santa Fe
+488: Lauderhill
+489: Milpitas
+490: Palatine
+491: Missoula
+492: Rock Hill
+493: Jacksonville
+494: Franklin
+495: Flagstaff
+496: Flower Mound
+497: Weston
+498: Waterloo
+499: Union City
+500: Mount Vernon
+501: Fort Myers
+502: Dothan
+503: Rancho Cordova
+504: Redondo Beach
+505: Jackson
+506: Pasco
+507: St. Charles
+508: Eau Claire
+509: North Richland Hills
+510: Bismarck
+511: Yorba Linda
+512: Kenner
+513: Walnut Creek
+514: Frederick
+515: Oshkosh
+516: Pittsburg
+517: Palo Alto
+518: Bossier City
+519: Portland
+520: St. Cloud
+521: Davis
+522: South San Francisco
+523: Camarillo
+524: North Little Rock
+525: Schenectady
+526: Gaithersburg
+527: Harlingen
+528: Woodbury
+529: Eagan
+530: Yuba City
+531: Maple Grove
+532: Youngstown
+533: Skokie
+534: Kissimmee
+535: Johnson City
+536: Victoria
+537: San Clemente
+538: Bayonne
+539: Laguna Niguel
+540: East Orange
+541: Shawnee
+542: Homestead
+543: Rockville
+544: Delray Beach
+545: Janesville
+546: Conway
+547: Pico Rivera
+548: Lorain
+549: Montebello
+550: Lodi
+551: New Braunfels
+552: Marysville
+553: Tamarac
+554: Madera
+555: Conroe
+556: Santa Cruz
+557: Eden Prairie
+558: Cheyenne
+559: Daytona Beach
+560: Alpharetta
+561: Hamilton
+562: Waltham
+563: Coon Rapids
+564: Haverhill
+565: Council Bluffs
+566: Taylor
+567: Utica
+568: Ames
+569: La Habra
+570: Encinitas
+571: Bowling Green
+572: Burnsville
+573: Greenville
+574: West Des Moines
+575: Cedar Park
+576: Tulare
+577: Monterey Park
+578: Vineland
+579: Terre Haute
+580: North Miami
+581: Mansfield
+582: West Allis
+583: Bristol
+584: Taylorsville
+585: Malden
+586: Meriden
+587: Blaine
+588: Wellington
+589: Cupertino
+590: Springfield
+591: Rogers
+592: St. Clair Shores
+593: Gardena
+594: Pontiac
+595: National City
+596: Grand Junction
+597: Rocklin
+598: Chapel Hill
+599: Casper
+600: Broomfield
+601: Petaluma
+602: South Jordan
+603: Springfield
+604: Great Falls
+605: Lancaster
+606: North Port
+607: Lakewood
+608: Marietta
+609: San Rafael
+610: Royal Oak
+611: Des Plaines
+612: Huntington Park
+613: La Mesa
+614: Orland Park
+615: Auburn
+616: Lakeville
+617: Owensboro
+618: Moore
+619: Jupiter
+620: Idaho Falls
+621: Dubuque
+622: Bartlett
+623: Rowlett
+624: Novi
+625: White Plains
+626: Arcadia
+627: Redmond
+628: Lake Elsinore
+629: Ocala
+630: Tinley Park
+631: Port Orange
+632: Medford
+633: Oak Lawn
+634: Rocky Mount
+635: Kokomo
+636: Coconut Creek
+637: Bowie
+638: Berwyn
+639: Midwest City
+640: Fountain Valley
+641: Buckeye
+642: Dearborn Heights
+643: Woodland
+644: Noblesville
+645: Valdosta
+646: Diamond Bar
+647: Manhattan
+648: Santee
+649: Taunton
+650: Sanford
+651: Kettering
+652: New Brunswick
+653: Decatur
+654: Chicopee
+655: Anderson
+656: Margate
+657: Weymouth Town
+658: Hempstead
+659: Corvallis
+660: Eastvale
+661: Porterville
+662: West Haven
+663: Brentwood
+664: Paramount
+665: Grand Forks
+666: Georgetown
+667: St. Peters
+668: Shoreline
+669: Mount Prospect
+670: Hanford
+671: Normal
+672: Rosemead
+673: Lehi
+674: Pocatello
+675: Highland
+676: Novato
+677: Port Arthur
+678: Carson City
+679: San Marcos
+680: Hendersonville
+681: Elyria
+682: Revere
+683: Pflugerville
+684: Greenwood
+685: Bellevue
+686: Wheaton
+687: Smyrna
+688: Sarasota
+689: Blue Springs
+690: Colton
+691: Euless
+692: Castle Rock
+693: Cathedral City
+694: Kingsport
+695: Lake Havasu City
+696: Pensacola
+697: Hoboken
+698: Yucaipa
+699: Watsonville
+700: Richland
+701: Delano
+702: Hoffman Estates
+703: Florissant
+704: Placentia
+705: West New York
+706: Dublin
+707: Oak Park
+708: Peabody
+709: Perth Amboy
+710: Battle Creek
+711: Bradenton
+712: Gilroy
+713: Milford
+714: Albany
+715: Ankeny
+716: La Crosse
+717: Burlington
+718: DeSoto
+719: Harrisonburg
+720: Minnetonka
+721: Elkhart
+722: Lakewood
+723: Glendora
+724: Southaven
+725: Charleston
+726: Joplin
+727: Enid
+728: Palm Beach Gardens
+729: Brookhaven
+730: Plainfield
+731: Grand Island
+732: Palm Desert
+733: Huntersville
+734: Tigard
+735: Lenexa
+736: Saginaw
+737: Kentwood
+738: Doral
+739: Apple Valley
+740: Grapevine
+741: Aliso Viejo
+742: Sammamish
+743: Casa Grande
+744: Pinellas Park
+745: Troy
+746: West Sacramento
+747: Burien
+748: Commerce City
+749: Monroe
+750: Cerritos
+751: Downers Grove
+752: Coral Gables
+753: Wilson
+754: Niagara Falls
+755: Poway
+756: Edina
+757: Cuyahoga Falls
+758: Rancho Santa Margarita
+759: Harrisburg
+760: Huntington
+761: La Mirada
+762: Cypress
+763: Caldwell
+764: Logan
+765: Galveston
+766: Sheboygan
+767: Middletown
+768: Murray
+769: Roswell
+770: Parker
+771: Bedford
+772: East Lansing
+773: Methuen
+774: Covina
+775: Alexandria
+776: Olympia
+777: Euclid
+778: Mishawaka
+779: Salina
+780: Azusa
+781: Newark
+782: Chesterfield
+783: Leesburg
+784: Dunwoody
+785: Hattiesburg
+786: Roseville
+787: Bonita Springs
+788: Portage
+789: St. Louis Park
+790: Collierville
+791: Middletown
+792: Stillwater
+793: East Providence
+794: Lawrence
+795: Wauwatosa
+796: Mentor
+797: Ceres
+798: Cedar Hill
+799: Mansfield
+800: Binghamton
+801: Coeur d'Alene
+802: San Luis Obispo
+803: Minot
+804: Palm Springs
+805: Pine Bluff
+806: Texas City
+807: Summerville
+808: Twin Falls
+809: Jeffersonville
+810: San Jacinto
+811: Madison
+812: Altoona
+813: Columbus
+814: Beavercreek
+815: Apopka
+816: Elmhurst
+817: Maricopa
+818: Farmington
+819: Glenview
+820: Cleveland Heights
+821: Draper
+822: Lincoln
+823: Sierra Vista
+824: Lacey
+825: Biloxi
+826: Strongsville
+827: Barnstable Town
+828: Wylie
+829: Sayreville
+830: Kannapolis
+831: Charlottesville
+832: Littleton
+833: Titusville
+834: Hackensack
+835: Newark
+836: Pittsfield
+837: York
+838: Lombard
+839: Attleboro
+840: DeKalb
+841: Blacksburg
+842: Dublin
+843: Haltom City
+844: Lompoc
+845: El Centro
+846: Danville
+847: Jefferson City
+848: Cutler Bay
+849: Oakland Park
+850: North Miami Beach
+851: Freeport
+852: Moline
+853: Coachella
+854: Fort Pierce
+855: Smyrna
+856: Bountiful
+857: Fond du Lac
+858: Everett
+859: Danville
+860: Keller
+861: Belleville
+862: Bell Gardens
+863: Cleveland
+864: North Lauderdale
+865: Fairfield
+866: Salem
+867: Rancho Palos Verdes
+868: San Bruno
+869: Concord
+870: Burlington
+871: Apex
+872: Midland
+873: Altamonte Springs
+874: Hutchinson
+875: Buffalo Grove
+876: Urbandale
+877: State College
+878: Urbana
+879: Plainfield
+880: Manassas
+881: Bartlett
+882: Kearny
+883: Oro Valley
+884: Findlay
+885: Rohnert Park
+886: Westfield
+887: Linden
+888: Sumter
+889: Wilkes-Barre
+890: Woonsocket
+891: Leominster
+892: Shelton
+893: Brea
+894: Covington
+895: Rockwall
+896: Meridian
+897: Riverton
+898: St. Cloud
+899: Quincy
+900: Morgan Hill
+901: Warren
+902: Edmonds
+903: Burleson
+904: Beverly
+905: Mankato
+906: Hagerstown
+907: Prescott
+908: Campbell
+909: Cedar Falls
+910: Beaumont
+911: La Puente
+912: Crystal Lake
+913: Fitchburg
+914: Carol Stream
+915: Hickory
+916: Streamwood
+917: Norwich
+918: Coppell
+919: San Gabriel
+920: Holyoke
+921: Bentonville
+922: Florence
+923: Peachtree Corners
+924: Brentwood
+925: Bozeman
+926: New Berlin
+927: Goose Creek
+928: Huntsville
+929: Prescott Valley
+930: Maplewood
+931: Romeoville
+932: Duncanville
+933: Atlantic City
+934: Clovis
+935: The Colony
+936: Culver City
+937: Marlborough
+938: Hilton Head Island
+939: Moorhead
+940: Calexico
+941: Bullhead City
+942: Germantown
+943: La Quinta
+944: Lancaster
+945: Wausau
+946: Sherman
+947: Ocoee
+948: Shakopee
+949: Woburn
+950: Bremerton
+951: Rock Island
+952: Muskogee
+953: Cape Girardeau
+954: Annapolis
+955: Greenacres
+956: Ormond Beach
+957: Hallandale Beach
+958: Stanton
+959: Puyallup
+960: Pacifica
+961: Hanover Park
+962: Hurst
+963: Lima
+964: Marana
+965: Carpentersville
+966: Oakley
+967: Huber Heights
+968: Lancaster
+969: Montclair
+970: Wheeling
+971: Brookfield
+972: Park Ridge
+973: Florence
+974: Roy
+975: Winter Garden
+976: Chelsea
+977: Valley Stream
+978: Spartanburg
+979: Lake Oswego
+980: Friendswood
+981: Westerville
+982: Northglenn
+983: Phenix City
+984: Grove City
+985: Texarkana
+986: Addison
+987: Dover
+988: Lincoln Park
+989: Calumet City
+990: Muskegon
+991: Aventura
+992: Martinez
+993: Greenfield
+994: Apache Junction
+995: Monrovia
+996: Weslaco
+997: Keizer
+998: Spanish Fork
+999: Beloit
+1000: Panama City
