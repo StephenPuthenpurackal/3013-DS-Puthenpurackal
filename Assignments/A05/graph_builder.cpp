@@ -76,6 +76,7 @@ JsonFacade JF(CitiesInput);
 // Creating 2 pointers of struct city
 City **CityPointer;
 City *ReadCity;
+City *temp;
 
 // Using the cities.json files size for the instantiation of SizeOfJsonfile
 int SizeOfJsonFile = JF.getSize();
@@ -90,6 +91,14 @@ for(int i = 0; i < SizeOfJsonFile; i++){
     CityPointer[i] = new City(object);
     //outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 
+}
+
+H.Heapify(CityPointer,false);
+int b = 0;
+while(!H.Empty()){
+        temp = H.Extract();
+        cout<<b<<" "<<temp->Name<< " " <<temp->Priority << endl;
+        b++;
 }
 
 for(int i = 0; i < SizeOfJsonFile; i++){
