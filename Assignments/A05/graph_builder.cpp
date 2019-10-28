@@ -7,9 +7,17 @@
 // Assignment:       A05
 // Author:           Stephen Puthenpurackal
 // Email:            datfoosteve@gmail.com
-// Files:            (list of source files)
+// Files:            Geo.hpp,Heap.hpp,json.hpp,JsonFacade.hpp,cities.json
 // Description:
-//       describe program here thoroughly
+//       This program gives the user information on the distances between cities by
+//       the use of Json files, heaps, loops, structs, classes, and algorithms
+//       The distance is calculated by gathering 2 coordinates from 2 difference cities
+//       and then inputed in the distance formula, known as the Haversine Formula.
+//       As instructed, the program only uses the first 10 and the last 10 of the
+//       json cities input as the decided output. Creating an array of pointers,
+//       which point to json struct objects, the user can organize all information
+//       easily by the use of heaps and the city objects priority. The information is then
+//       printed in an output file. 
 //
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -27,6 +35,7 @@
 using namespace std;
 using json = nlohmann::json;
 
+//struct that is used to organize all city information used in the entire program
 struct City{
         string Name;
         int Population;
@@ -35,6 +44,7 @@ struct City{
         int Rank;
         string State;
         double Priority;
+        // default constructor
         City(){
             Name = "";
             Population = 0;
@@ -44,6 +54,7 @@ struct City{
             State = "";
             Priority = 0.0;
         }
+        // parameterized constructor using json file
         City(json obj){
             Name = obj["city"];
             Population = obj["population"];
@@ -53,6 +64,7 @@ struct City{
             State = obj["state"];
             Priority = 0.0;            
         }
+        // user defined parameterized constructor, for easy access of all struct variables
         City(int P,string N, double Long,double Lat, int R, string St, double Pri):
         Population(P), Name(N), Longitude(Long), Latitude(Lat), Rank(R), State(St), Priority(Pri){}
     };
@@ -63,6 +75,8 @@ ofstream outfile;
 outfile.open("output.txt");
 
 int count = 0;
+// user can change how many cities that they want printed
+int howManyCities = 3;
 double HaversineDistanceValue = 0;
 
 // Creating instance of Json Class
@@ -89,10 +103,10 @@ CityPointer = new City *[SizeOfJsonFile];
 for(int i = 0; i < SizeOfJsonFile; i++){
     object = JF.getNext();
     CityPointer[i] = new City(object);
-    //outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 
 }
 
+// test code
 /*H.Heapify(CityPointer,SizeOfJsonFile);
 int b = 0;
 while(!H.Empty()){
@@ -102,38 +116,45 @@ while(!H.Empty()){
 }
 */
 
+//Main loop that loops the size of the JsonFile , in this case 1000, 
+// and has the abllity to change dynamically due to the size of the file
 for(int i = 0; i < SizeOfJsonFile; i++){
 
+// Prints the first 10 cities and last 10 cities that are first used to compare coordinate A
 if( i < 10 || i >= (SizeOfJsonFile - 10)){
     outfile << setfill('0') << setw(4);
     outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 }
 
 for(int j = 0; j < SizeOfJsonFile; j++){
-
+    // Both coordinates used to evetually be inputed into Haversine Formula
     Coordinate A(CityPointer[i]->Latitude, CityPointer[i]->Longitude);
     Coordinate B(CityPointer[j]->Latitude,CityPointer[j]->Longitude);
 
     HaversineDistanceValue = HaversineDistance(A,B);
 
+    // Priority is decided and struct objects priority is recorded
     CityPointer[j]->Priority = HaversineDistanceValue;
-
+    // Inserts all needed objects into the heap
     H.Insert(CityPointer[j]);
 }
 
+// loop that runs until heap is empty by the size of the input json file
 while (count < SizeOfJsonFile){
 
 ReadCity = H.Extract();
 
+// Another comparison that makes sure only the first 10 and the last 10 cities information is printed
 if( i < 10 || i >= (SizeOfJsonFile - 10)){
-    if(count <= 3){
-
+    if(count <= howManyCities){
+        // Use of iomanip and other forms of output manipulation to print neatly, the first city being different
+        // then the second and third city output
         if(count == 1){
             if(ReadCity->Name != CityPointer[i]->Name){
             outfile << "\t" << count  << ")" << " " << ReadCity->Name << " (" << ReadCity->Priority << ") " << endl;
         }
         }
-
+        // the rest print normally
          if(count != 1){
         if(ReadCity->Name != CityPointer[i]->Name){
             outfile << "\t" << "\t" << count << ") " << ReadCity->Name << " (" << ReadCity->Priority << ") " << endl;
@@ -141,6 +162,7 @@ if( i < 10 || i >= (SizeOfJsonFile - 10)){
         }
     }
 }
+// incrementation and makes sure pointers go back to being null
 count++;
 ReadCity = NULL;
 }
