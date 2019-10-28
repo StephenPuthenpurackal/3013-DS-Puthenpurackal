@@ -31,7 +31,7 @@ class Cities{
             State = "";
             Priority = 0.0;
         }
-        City(json &obj){
+        City(json obj){
             Name = obj["name"];
             Population = obj["population"];
             Longitude = obj["longitude"];
