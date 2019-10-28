@@ -46,7 +46,7 @@ struct City{
             Priority = 0.0;
         }
         City(json obj){
-            Name = obj["name"];
+            Name = obj["city"];
             Population = obj["population"];
             Longitude = obj["longitude"];
             Latitude = obj["latitude"];
@@ -59,23 +59,59 @@ struct City{
     };
 
 int main() {
+// using Fstream library to open a text file called output.txt
 ofstream outfile;
 outfile.open("output.txt");
 
+double HaversineDistanceValue = 0;
+
+// Creating instance of Json Class
+// instantiating a Json Object
+// And using a string with the name of the cities input json file in conjunction to
+//                  instantiating an JsonFacade object.
 string CitiesInput = "cities.json";
 json object;
 JsonFacade JF(CitiesInput);
 
+// Creating 2 pointers of struct city
 City **CityPointer;
 City *ReadCity;
 
+// Using the cities.json files size for the instantiation of SizeOfJsonfile
 int SizeOfJsonFile = JF.getSize();
 Heap<City> H(SizeOfJsonFile + 1,false);
 
+// Creating an Array of pointers using the size of the json Cities file
 CityPointer = new City *[SizeOfJsonFile];
+
+// Iterating through every pointer and dynamically assigning new son struct objects on every pointer
 for(int i = 0; i < SizeOfJsonFile; i++){
     object = JF.getNext();
     CityPointer[i] = new City(object);
+
+}
+
+for(int i = 0; i < SizeOfJsonFile; i++){
+
+Coordinate A(CityPointer[i]->Latitude, CityPointer[i]->Longitude);
+
+if( i > 10 || i > (SizeOfJsonFile - 10)){
+    outfile << i+1 << ": " << CityPointer[i]->Name << endl;
+}
+
+for(int j = 0; j < SizeOfJsonFile; j++){
+
+    Coordinate B(CityPointer[j]->Latitude,CityPointer[j]->Longitude);
+
+    HaversineDistanceValue = HaversineDistance(A,B);
+
+    CityPointer[j]->Priority = HaversineDistanceValue;
+
+    H.Insert(CityPointer[j]);
+}
+
+
+
 }
 
 //send in city pointer to class Cities C <-- the object function load cities
