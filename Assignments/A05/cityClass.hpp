@@ -11,11 +11,12 @@
 using namespace std;
 using json = nlohmann::json;
 
+
 class Cities{
     private:
     struct City{
-        int Population;
         string Name;
+        int Population;
         double Longitude;
         double Latitude;
         int Rank;
@@ -30,18 +31,17 @@ class Cities{
             State = "";
             Priority = 0.0;
         }
+        City(json &obj){
+            Name = obj["name"];
+            Population = obj["population"];
+            Longitude = obj["longitude"];
+            Latitude = obj["latitude"];
+            Rank = obj["rank"];
+            State = obj["state"];
+            Priority = 0.0;            
+        }
         City(int P,string N, double Long,double Lat, int R, string St, double Pri):
         Population(P), Name(N), Longitude(Long), Latitude(Lat), Rank(R), State(St), Priority(Pri){}
-        
-        City(json obj){
-            Name = obj["Name"];
-            Population = obj["Population"];
-            Longitude = obj["Longitude"];
-            Latitude = obj["Latitude"];
-            Rank = obj["Rank"];
-            State = obj["State"];
-            Priority = 0.0;
-        }
     };
     public:
 

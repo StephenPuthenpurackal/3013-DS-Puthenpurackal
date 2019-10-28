@@ -37,16 +37,16 @@ string CitiesInput = "cities.json";
 json object;
 JsonFacade JF(CitiesInput);
 
-Cities **City;
+Cities **CityPointer;
 Cities *ReadCity;
 
 int SizeOfJsonFile = JF.getSize();
 Heap<Cities> H(SizeOfJsonFile + 1,false);
 
-City = new Cities *[SizeOfJsonFile];
+CityPointer = new Cities *[SizeOfJsonFile];
 for(int i = 0; i < SizeOfJsonFile; i++){
     object = JF.getNext();
-    City[i] = new Cities(object);
+    CityPointer[i] = new Cities(object);
 }
 
 
