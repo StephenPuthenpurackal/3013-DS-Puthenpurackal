@@ -6,6 +6,7 @@
 #include "JsonFacade.hpp"
 #include "Geo.hpp"
 #include "json.hpp"
+#include "cities.json"
 
 using namespace std;
 using json = nlohmann::json;

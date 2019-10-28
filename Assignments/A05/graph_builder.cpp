@@ -21,7 +21,8 @@
 #include "JsonFacade.hpp"
 #include "json.hpp"
 #include "Geo.hpp"
-#include "cities.hpp"
+#include "cityClass.hpp"
+#include "cities.json"
 #include "Heap.hpp"
 
 using namespace std;
