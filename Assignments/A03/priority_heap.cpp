@@ -1,10 +1,8 @@
-#include "json_helper.cpp"
-//#include "heap_fin.hpp"
-#include <fstream>
-#include <iostream>
-
 #define _USE_MATH_DEFINES
 
+#include "json_helper.cpp"
+#include <fstream>
+#include <iostream>
 #include <math.h>
 
 using namespace std;
@@ -45,6 +43,23 @@ double HaversineDistance(const Coordinate &p1, const Coordinate &p2) {
     double computation = asin(sqrt(sin(diffLa / 2) * sin(diffLa / 2) + cos(latRad1) * cos(latRad2) * sin(doffLo / 2) * sin(doffLo / 2)));
     return 2 * EarthRadiusKm * computation;
 }
+
+float AuxHaversineDistance(double latitude, double longitude){
+    float latx = 33.9137;
+    float longy = -98.4934;
+
+    Coordinate Point1Coordinate(latitude, longitude);
+    Coordinate Point2Coordinate(latx, longy);
+
+    return HaversineDistance(Point1Coordinate, Point2Coordinate);
+}
+
+int nameToNumber(string name){
+        int total = 0;
+        for(int i = 0; i < name.length(); i++)
+            total += (int)name[i];
+        return total;
+    }
 
 struct Animal {
     string animal_name;
