@@ -61,6 +61,7 @@ int main() {
 ofstream outfile;
 outfile.open("output.txt");
 
+int count = 0;
 double HaversineDistanceValue = 0;
 
 // Creating instance of Json Class
@@ -94,7 +95,7 @@ for(int i = 0; i < SizeOfJsonFile; i++){
 
 Coordinate A(CityPointer[i]->Latitude, CityPointer[i]->Longitude);
 
-if( i > 10 || i > (SizeOfJsonFile - 10)){
+if( i < 10 || i > (SizeOfJsonFile - 10)){
     outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 }
 
@@ -109,16 +110,29 @@ for(int j = 0; j < SizeOfJsonFile; j++){
     H.Insert(CityPointer[j]);
 }
 
+while (count < SizeOfJsonFile){
+
+ReadCity = H.Extract();
+
+if( i < 10 || i > (SizeOfJsonFile - 10)){
+
+    if(count <= 3){
+        if(ReadCity->Name != CityPointer[i]->Name){
+            outfile << "|||" << count << " " << ReadCity->Name << " " << ReadCity->Priority << endl;
+        }
+    }
+
 
 
 }
 
-//send in city pointer to class Cities C <-- the object function load cities
 
+count++;
+ReadCity = NULL;
+}
 
-
-
-
+count = 0;
+}
 
 return 0;  
 }
