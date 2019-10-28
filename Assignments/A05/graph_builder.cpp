@@ -93,14 +93,15 @@ for(int i = 0; i < SizeOfJsonFile; i++){
 
 for(int i = 0; i < SizeOfJsonFile; i++){
 
-Coordinate A(CityPointer[i]->Latitude, CityPointer[i]->Longitude);
 
-if( i < 10 || i > (SizeOfJsonFile - 10)){
+
+if( i < 10 || i >= (SizeOfJsonFile - 10)){
     outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 }
 
 for(int j = 0; j < SizeOfJsonFile; j++){
 
+    Coordinate A(CityPointer[i]->Latitude, CityPointer[i]->Longitude);
     Coordinate B(CityPointer[j]->Latitude,CityPointer[j]->Longitude);
 
     HaversineDistanceValue = HaversineDistance(A,B);
@@ -114,23 +115,25 @@ while (count < SizeOfJsonFile){
 
 ReadCity = H.Extract();
 
-if( i < 10 || i > (SizeOfJsonFile - 10)){
-
+if( i < 10 || i >= (SizeOfJsonFile - 10)){
     if(count <= 3){
+
+        if(count == 1){
+            if(ReadCity->Name != CityPointer[i]->Name){
+            outfile << "\t" << count  << ")" << " " << ReadCity->Name << " (" << ReadCity->Priority << ") " << endl;
+        }
+        }
+
+         if(count != 1){
         if(ReadCity->Name != CityPointer[i]->Name){
-            outfile << "|||" << count << " " << ReadCity->Name << " " << ReadCity->Priority << endl;
+            outfile << "\t" << "\t" << count << ") " << ReadCity->Name << " (" << ReadCity->Priority << ") " << endl;
+        }
         }
     }
-
-
-
 }
-
-
 count++;
 ReadCity = NULL;
 }
-
 count = 0;
 }
 
