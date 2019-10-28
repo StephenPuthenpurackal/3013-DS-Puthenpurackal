@@ -93,20 +93,21 @@ for(int i = 0; i < SizeOfJsonFile; i++){
 
 }
 
-H.Heapify(CityPointer,false);
+/*H.Heapify(CityPointer,SizeOfJsonFile);
 int b = 0;
 while(!H.Empty()){
         temp = H.Extract();
-        cout<<b<<" "<<temp->Name<< " " <<temp->Priority << endl;
+        outfile <<b<<" "<<temp->Name<< " " <<temp->Priority << endl;
         b++;
 }
+*/
 
 for(int i = 0; i < SizeOfJsonFile; i++){
 
-if( i < 10 || i >= (SizeOfJsonFile - 10)){
+/* if( i < 10 || i >= (SizeOfJsonFile - 10)){
     outfile << setfill('0') << setw(4);
     outfile << i+1 << ": " << CityPointer[i]->Name << endl;
-}
+} */
 
 for(int j = 0; j < SizeOfJsonFile; j++){
 
@@ -119,7 +120,7 @@ for(int j = 0; j < SizeOfJsonFile; j++){
 
     H.Insert(CityPointer[j]);
 }
-
+/*
 while (count < SizeOfJsonFile){
 
 ReadCity = H.Extract();
@@ -145,6 +146,16 @@ ReadCity = NULL;
 }
 count = 0;
 }
+*/  }
+outfile << "it got here" << endl;
+H.Heapify(CityPointer,SizeOfJsonFile);
+int b = 0;
+while(!H.Empty()){
+        temp = H.Extract();
+        outfile <<b<<" "<<temp->Name<< " " <<temp->Priority << endl;
+        b++;
+}
+
 
 return 0;  
 }
