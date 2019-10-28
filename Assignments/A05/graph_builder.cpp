@@ -21,8 +21,6 @@
 #include "JsonFacade.hpp"
 #include "json.hpp"
 #include "Geo.hpp"
-//#include "cityClass.hpp"
-#include "cities.json"
 #include "Heap.hpp"
 
 using namespace std;
@@ -37,8 +35,8 @@ struct City{
         string State;
         double Priority;
         City(){
-            Population = 0;
             Name = "";
+            Population = 0;
             Longitude = 0.0;
             Latitude = 0.0;
             Rank = 0.0;
@@ -54,8 +52,8 @@ struct City{
             State = obj["state"];
             Priority = 0.0;            
         }
-        City(int P,string N, double Long,double Lat, int R, string St, double Pri):
-        Population(P), Name(N), Longitude(Long), Latitude(Lat), Rank(R), State(St), Priority(Pri){}
+       // City(int P,string N, double Long,double Lat, int R, string St, double Pri):
+      //  Population(P), Name(N), Longitude(Long), Latitude(Lat), Rank(R), State(St), Priority(Pri){}
     };
 
 int main() {
@@ -88,6 +86,7 @@ CityPointer = new City *[SizeOfJsonFile];
 for(int i = 0; i < SizeOfJsonFile; i++){
     object = JF.getNext();
     CityPointer[i] = new City(object);
+    outfile << i+1 << ": " << CityPointer[i]->Name << endl;
 
 }
 
