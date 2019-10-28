@@ -53,8 +53,8 @@ struct City{
             State = obj["state"];
             Priority = 0.0;            
         }
-       // City(int P,string N, double Long,double Lat, int R, string St, double Pri):
-      //  Population(P), Name(N), Longitude(Long), Latitude(Lat), Rank(R), State(St), Priority(Pri){}
+        City(int P,string N, double Long,double Lat, int R, string St, double Pri):
+        Population(P), Name(N), Longitude(Long), Latitude(Lat), Rank(R), State(St), Priority(Pri){}
     };
 
 int main() {
